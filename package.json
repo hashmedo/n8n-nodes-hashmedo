@@ -1,0 +1,50 @@
+{
+  "name": "n8n-nodes-hashmedo",
+  "version": "0.1.0",
+  "description": "Connect an n8n workflow to Hashmedo for human questions",
+  "license": "MIT",
+  "homepage": "https://hashmedo.com",
+  "author": {
+    "name": "Hashmedo",
+    "url": "https://hashmedo.com",
+    "email": "support@hashmedo.com"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "hashmedo",
+    "human-in-the-loop"
+  ],
+  "engines": {
+    "node": ">=22.16"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint"
+  },
+  "files": [
+    "dist",
+    "examples"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [],
+    "nodes": [
+      "dist/nodes/Hashmedo/Hashmedo.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "0.56.3",
+    "eslint": "9.39.4",
+    "prettier": "3.8.3",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashmedo/n8n-nodes-hashmedo.git"
+  }
+}

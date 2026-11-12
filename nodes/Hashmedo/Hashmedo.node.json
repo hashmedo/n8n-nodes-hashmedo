@@ -1,0 +1,9 @@
+{
+  "node": "n8n-nodes-hashmedo.hashmedo",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Communication"],
+  "resources": {
+    "primaryDocumentation": [{ "url": "https://www.npmjs.com/package/n8n-nodes-hashmedo" }]
+  }
+}

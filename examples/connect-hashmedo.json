@@ -1,0 +1,30 @@
+{
+  "name": "Connect a workflow to Hashmedo",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "87710134-d2b4-42e1-b036-879ef5531f42",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "connectUrl": "http://127.0.0.1:17659/connect"
+      },
+      "id": "e926acba-8ea4-407c-94dd-63c768fa6f17",
+      "name": "Hashmedo",
+      "type": "n8n-nodes-hashmedo.hashmedo",
+      "typeVersion": 1,
+      "position": [240, 0]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Hashmedo", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "active": false
+}
